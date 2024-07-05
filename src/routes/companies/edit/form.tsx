@@ -50,7 +50,7 @@ export const CompanyForm = () => {
     });
 
   return (
-    <Edit
+    (<Edit
       isLoading={formLoading}
       saveButtonProps={saveButtonProps}
       breadcrumb={false}
@@ -113,7 +113,7 @@ export const CompanyForm = () => {
           <Input placeholder="Website" />
         </Form.Item>
       </Form>
-    </Edit>
+    </Edit>)
   );
 };
 

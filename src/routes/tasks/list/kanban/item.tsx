@@ -22,7 +22,7 @@ export const KanbanItem = ({
   });
 
   return (
-    <div
+    (<div
       style={{
         position: "relative",
       }}
@@ -42,7 +42,7 @@ export const KanbanItem = ({
       </div>
       {active?.id === id && (
         // antd sider has z-index of 999
-        <DragOverlay zIndex={1000}>
+        (<DragOverlay zIndex={1000}>
           <div
             style={{
               borderRadius: "8px",
@@ -53,8 +53,8 @@ export const KanbanItem = ({
           >
             {children}
           </div>
-        </DragOverlay>
+        </DragOverlay>)
       )}
-    </div>
+    </div>)
   );
 };
